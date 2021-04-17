@@ -1,0 +1,18 @@
+{
+  "name": "violet",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "js": ["index.js"],
+      "matches": ["*://www.bilibili.com/video/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["style.css"],
+      "matches": ["*://www.bilibili.com/*"]
+    }
+  ]
+}

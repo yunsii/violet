@@ -9,6 +9,6 @@
 - 🔨 打包 service worker
 - 🚀 开发环境热更新
 
-![chrome-extension-hot-reload](./memo/chrome-extension-hot-reload.png)
+![chrome-extension-hot-reload](/memo/images/chrome-extension-hot-reload.jpg)
 
 <p align="center">热更新流程图</p>

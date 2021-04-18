@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "CommonJS",
+    "module": "ES6",
     "target": "ES6",
     "esModuleInterop": true,
     "sourceMap": false,
     "noEmitOnError": true,
     "skipLibCheck": false,
+    "moduleResolution": "node",
     "jsx": "react-jsx",
     "outDir": "./dist",
     "baseUrl": ".",
@@ -14,5 +15,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["./src"]
+  "include": ["./src"],
+  "exclude": ["./scripts"]
 }

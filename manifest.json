@@ -1,18 +1,23 @@
 {
-  "name": "violet",
+  "name": "Violet",
   "version": "0.1.0",
   "manifest_version": 3,
   "content_scripts": [
     {
       "js": ["index.js"],
-      "matches": ["*://www.bilibili.com/video/*"],
+      "matches": ["*://www.google.com//*"],
       "run_at": "document_idle"
     }
   ],
+  "action": {},
+  "background": {
+    "service_worker": "background.js"
+  },
   "web_accessible_resources": [
     {
       "resources": ["style.css"],
-      "matches": ["*://www.bilibili.com/*"]
+      "matches": ["*://www.google.com/*"]
     }
-  ]
+  ],
+  "permissions": ["tabs", "management", "alarms"]
 }

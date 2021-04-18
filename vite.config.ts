@@ -33,6 +33,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 100000000,
     cssCodeSplit: false,
     brotliSize: false,
+    emptyOutDir: false,
     rollupOptions: {
       inlineDynamicImports: true,
       output: {

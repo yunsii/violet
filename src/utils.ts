@@ -35,3 +35,21 @@ export function injectCss() {
       document.head.appendChild(styleEl);
     });
 }
+
+export function autoReload() {
+  const socket = new WebSocket(`ws://localhost:8721`);
+
+  socket.addEventListener('close', () => console.log('socket close'));
+  socket.addEventListener('message', (event) => {
+    console.log({ message: event.data });
+    console.log('will reload violet');
+    chrome.runtime.sendMessage({ action: 'reload violet' });
+  });
+  socket.addEventListener('error', (event) => console.error('error!', event));
+}
+
+export function listenServiceWorker() {
+  chrome.runtime.onMessage.addListener((message) => {
+    console.log(message);
+  });
+}

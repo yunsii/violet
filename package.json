@@ -9,7 +9,8 @@
   "scripts": {
     "build-worker": "tsc --out ./dist/background.js --watch ./src/background.ts",
     "build-ext": "node ./scripts/build-ext-watch.js",
-    "dev": "concurrently \"npm:build-*\"",
+    "watch-ext": "node ./scripts/ext-watcher.js",
+    "dev": "concurrently \"npm:build-*\" \"npm:watch-ext\"",
     "reload": "node ./scripts/reload.js"
   },
   "devDependencies": {

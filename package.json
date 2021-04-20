@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build-worker": "tsc --out ./dist/background.js --watch ./src/background.ts",
-    "build-ext": "node ./scripts/build-ext-watch.js",
+    "build-ext": "vite build --watch",
     "watch-ext": "node ./scripts/ext-watcher.js",
     "dev": "concurrently \"npm:build-*\" \"npm:watch-ext\"",
     "reload": "node ./scripts/reload.js"
@@ -23,7 +23,7 @@
     "less": "^4.1.1",
     "rollup-plugin-copy": "^3.4.0",
     "typescript": "^4.2.4",
-    "vite": "^2.1.5",
+    "vite": "^2.2.1",
     "vite-plugin-singlefile": "^0.5.1",
     "vite-tsconfig-paths": "^3.3.1",
     "websocket": "^1.0.34"

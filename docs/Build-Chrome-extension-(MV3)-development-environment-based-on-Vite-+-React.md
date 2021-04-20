@@ -1,3 +1,5 @@
+[掘金](https://juejin.cn/post/6952417294941323277) | [V2EX](https://www.v2ex.com/t/771467) | [知乎](https://zhuanlan.zhihu.com/p/365821726) | [DEV](https://dev.to/theprimone/build-chrome-extension-mv3-development-environment-based-on-vite-react-497h)
+
 # 基于 Vite + React 构建 Chrome Extension (MV3) 开发环境
 
 ## 前言
@@ -31,7 +33,7 @@
 
 ### 热更新
 
-浏览器页面加载 content scripts 后会创建一个 websocket 链接，服务端收到请求后会开启对 `/dist` 目录的监听，websocket 服务监听到 `/dist`  的变化后主动发起通知。
+浏览器页面加载 content scripts 后会创建一个 websocket 链接，服务端收到请求后会开启对 `/dist` 目录的监听，websocket 服务监听到 `/dist` 的变化后主动发起通知。
 
 content scripts 收到需要更新 Extension 的通知，通过 `chrome.runtime.sendMessage` 触发 service worker 中通过 `chrome.runtime.onMessage` 注册的事件，依次触发 `chrome.runtime.reload` 和 `chrome.tabs.reload` 更新 Extension 和当前页面。实现了所写即所得，无需任何手动介入 🚀
 

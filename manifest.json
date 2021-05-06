@@ -1,5 +1,6 @@
 {
   "name": "Violet",
+  "description": "🎨 bilibili 弹幕控制台",
   "version": "0.1.0",
   "manifest_version": 3,
   "content_scripts": [

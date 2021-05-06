@@ -46,3 +46,11 @@ content scripts 收到需要更新 Extension 的通知，通过 `chrome.runtime.
 ## 总结
 
 由于现在的 Chrome Extension 大多是低于 MV3 版本的，两天下来，踩了不少坑，对于此前没有接触过的浏览器扩展开发也有了一定程度的了解。现在只是针对 Chrome Extension 的场景，后续会在不断完善当前场景的情况下，完成对其他浏览器扩展的支持。最终应该可以封装一个浏览器扩展开发的工具。
+
+---
+
+## 后续
+
+- [`vite build --watch`](https://github.com/vitejs/vite/compare/v2.1.5...v2.2.0) 在 v2.2.0 可用
+- [`vite build --watch` 会清空打包后的文件夹](https://github.com/vitejs/vite/issues/3068)
+- [`vite@2.2.4` watch 清空文件夹的问题已合并并发布](https://github.com/vitejs/vite/compare/v2.2.3...v2.2.4)

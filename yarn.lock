@@ -1500,10 +1500,10 @@ vite-tsconfig-paths@^3.3.1:
     recrawl-sync "^2.0.3"
     tsconfig-paths "^3.9.0"
 
-vite@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.nlark.com/vite/download/vite-2.2.1.tgz#90c481f69371f32867d86a6a623bb064b876ad3d"
-  integrity sha1-kMSB9pNx8yhn2GpqYjuwZLh2rT0=
+vite@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.nlark.com/vite/download/vite-2.2.4.tgz#8f9cc85aacab04c850085894b086c8717f12ed16"
+  integrity sha1-j5zIWqyrBMhQCFiUsIbIcX8S7RY=
   dependencies:
     esbuild "^0.9.3"
     postcss "^8.2.1"

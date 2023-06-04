@@ -1,3 +1,5 @@
+## 如果想实现插件的热更新，不妨试试 [@crxjs/vite-plugin](https://github.com/crxjs/chrome-extension-tools)。
+
 # Violet
 
 🎨 bilibili 弹幕控制台（WIP）
